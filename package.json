@@ -1,0 +1,44 @@
+{
+  "name": "fetch-data-api",
+  "version": "1.0.0",
+  "description": "API is used for fetching data from collection in DB.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest test.js",
+    "start": "pm2 start ecosystem.config.js",
+    "stop": "pm2 stop ecosystem.config.js",
+    "log": "pm2 log"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ridvankartal91/fetch-data-api.git"
+  },
+  "keywords": [
+    "fetch",
+    "data",
+    "api",
+    "express",
+    "mongodb"
+  ],
+  "author": "Ridvan Kartal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ridvankartal91/fetch-data-api/issues"
+  },
+  "homepage": "https://github.com/ridvankartal91/fetch-data-api#readme",
+  "dependencies": {
+    "@hapi/joi-date": "^2.0.1",
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "joi": "^17.3.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.10.17"
+  }
+}
